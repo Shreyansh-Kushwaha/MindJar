@@ -11,7 +11,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 # MongoDB connection
-client = MongoClient("mongodb+srv://Baymax:Baymax@baymax.xninj.mongodb.net/test?retryWrites=true&w=majority&appName=Baymax")
+client = MongoClient("add your own MONGODB URI")
 db = client.NotesApp
 notes_collection = db.notes
 
