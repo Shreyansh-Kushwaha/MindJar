@@ -5,13 +5,16 @@ from bson import ObjectId
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
+load_dotenv()
+
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 
 # MongoDB connection
-client = MongoClient("add your own MONGODB URI")
+MONGO_URI = os.getenv("MONGO_URI")
+client = MongoClient(MONGO_URI)
 db = client.NotesApp
 notes_collection = db.notes
 
