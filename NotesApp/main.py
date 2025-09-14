@@ -1,5 +1,7 @@
+import os
 from fastapi import FastAPI
 from pydantic import BaseModel
+from dotenv import load_dotenv
 from pymongo import MongoClient
 from bson import ObjectId
 from fastapi.staticfiles import StaticFiles
