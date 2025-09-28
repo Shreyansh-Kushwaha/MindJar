@@ -13,6 +13,15 @@ Perfect for learning CRUD operations with FastAPI and MongoDB.
 - 🎨 Modern UI using Bootstrap 5 + custom CSS
 - ⚡ FastAPI backend with automatic interactive docs (`/docs`)
 
+---
+
+
+## 📷 ScreenShots
+
+<img width="1348" height="710" alt="Screenshot - 7_31_2025 , 2_08_30 AM" src="https://github.com/Shreyansh-Kushwaha/MindJar/blob/main/NotesApp/110.jpg" />
+
+
+
 
 ---
 
