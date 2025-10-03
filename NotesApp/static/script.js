@@ -53,5 +53,32 @@ async function deleteNote(id) {
     getNotes();
 }
 
+
+
+// Light Theme Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('modeToggle');
+    const body = document.body;
+
+    // Load saved mode from localStorage (optional)
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark-mode');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+
+      // Save mode preference
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+  });
+
+
+
+
 // Load notes when page opens
 getNotes();
