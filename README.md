@@ -1,4 +1,4 @@
-# 📒 My Notes App
+# 📒 MindJar
 
 A simple, modern **Notes App** built with **FastAPI**, **MongoDB Atlas**, and **Bootstrap**.  
 You can **create**, **view**, and **delete** notes through a clean web interface.  
